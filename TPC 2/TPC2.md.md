@@ -1,0 +1,9 @@
+### TPC2
+
+Este trabalho consistiu em criar um programa em Python para o jogo "Adivinha o Número", que permite duas modalidades de jogo. O meu objetivo foi implementar estas modalidades de forma a criar uma interação clara entre o utilizador e o computador.
+
+Na primeira modalidade, o computador escolhe aleatoriamente um número entre 0 e 100 utilizando a função random.randrange. O utilizador tem de tentar adivinhar esse número, inserindo palpites sucessivos. Para implementar esta funcionalidade, criei um loop que compara o palpite do utilizador com o número escolhido pelo computador. Se o palpite for menor, o programa exibe a mensagem "O número que pensei é maior". Caso seja maior, a mensagem exibida é "O número que pensei é menor". Quando o utilizador acerta, o programa sai do loop e apresenta o número total de tentativas utilizadas. Para contar as tentativas, implementei um contador que é incrementado a cada interação.
+
+Na segunda modalidade, o utilizador escolhe um número entre 0 e 100, e o computador tenta adivinhar. Para isso, utilizei um intervalo dinâmico com os limites minimo e maximo, inicialmente definidos como 0 e 100. O computador começa por fazer um palpite utilizando a função random.randint dentro do intervalo. Com base na resposta do utilizador, ajustei o intervalo: se o palpite for menor do que o número pensado pelo utilizador, o limite inferior (minimo) é atualizado para o valor do palpite + 1; se for maior, o limite superior (maximo) é ajustado para o valor do palpite - 1. Este processo repete-se num loop até o computador acertar. Assim como na primeira modalidade, incluí um contador para calcular o número de tentativas necessárias até o computador adivinhar corretamente.
+
+Por fim, desenvolvi um menu inicial para o utilizador selecionar a modalidade de jogo que deseja jogar, garantindo que o programa oferece uma experiência interativa e funcional.
